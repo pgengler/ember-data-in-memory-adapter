@@ -227,7 +227,7 @@ export default DS.Adapter.extend({
     @param id
   */
   findItemById(data, id) {
-    return data.find((r) => '' + get(r, 'id') === '' + id);
+    return data.find((r) => '' + Ember.get(r, 'id') === '' + id);
   },
 
   /*
