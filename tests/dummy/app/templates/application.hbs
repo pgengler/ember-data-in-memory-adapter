@@ -1,3 +1,9 @@
 <h2 id="title">Welcome to Ember.js</h2>
 
 {{outlet}}
+
+<ul>
+  {{#each model as |event|}}
+  <li>{{event.content}} (at {{event.timestamp}})</li>
+  {{/each}}
+</ul>
