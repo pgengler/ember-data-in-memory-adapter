@@ -241,9 +241,9 @@ export default DS.Adapter.extend({
 
     return new Ember.RSVP.Promise(function(resolve) {
       let value = Ember.copy(callback.call(context), true);
-      if (get(adapter, 'simulateRemoteResponse')) {
+      if (Ember.get(adapter, 'simulateRemoteResponse')) {
         // Schedule with setTimeout
-        Ember.run.later(null, resolve, value, get(adapter, 'latency'));
+        Ember.run.later(null, resolve, value, Ember.get(adapter, 'latency'));
       } else {
         // Asynchronous, but at the of the runloop with zero latency
         resolve(value);
