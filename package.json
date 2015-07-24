@@ -1,7 +1,7 @@
 {
   "name": "ember-data-in-memory-adapter",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "An ember-data adapter with no persistence between reloads.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,11 @@
     "build": "ember build",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/pgengler/ember-data-in-memory-adapter.git",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Phil Gengler <phil@pgengler.net> (http://pgengler.net)",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.2",
