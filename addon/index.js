@@ -42,7 +42,7 @@ export default DS.Adapter.extend({
     @return {Array}
   */
   dataForType(typeClass) {
-    this.data[typeClass] ||= Ember.A();
+    this.data[typeClass] = this.data[typeClass] || Ember.A();
     return this.data[typeClass];
   },
 
