@@ -92,9 +92,7 @@ export default DS.Adapter.extend({
     let data = this.dataForType(typeClass);
     let item = data.findBy('id', id);
 
-    if (item) {
-      return this.simulateRemoteCall(() => item);
-    }
+    return this.simulateRemoteCall(() => item);
   },
 
   /**
@@ -109,9 +107,7 @@ export default DS.Adapter.extend({
     let data = this.dataForType(typeClass);
     let matches = data.filter(item => indexOf(ids, item.id) !== -1);
 
-    if (matches) {
-      return this.simulateRemoteCall(() => matches);
-    }
+    return this.simulateRemoteCall(() => matches);
   },
 
   /**
@@ -142,9 +138,7 @@ export default DS.Adapter.extend({
 
     let matches = this.queryData(data, query, typeClass);
 
-    if (matches) {
-      return this.simulateRemoteCall(() => matches);
-    }
+    return this.simulateRemoteCall(() => matches);
   },
 
   /**
