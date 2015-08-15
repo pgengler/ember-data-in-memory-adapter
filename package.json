@@ -1,6 +1,6 @@
 {
   "name": "ember-data-in-memory-adapter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An ember-data adapter with no persistence between reloads.",
   "directories": {
     "doc": "doc",

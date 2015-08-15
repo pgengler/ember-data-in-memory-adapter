@@ -10,6 +10,12 @@ export default DS.Adapter.extend({
 
   data: { },
 
+  // Ember Data 2.0 reload behavior
+  shouldReloadRecord: function() { return false; },
+  shouldReloadAll: function() { return false; },
+  shouldBackgroundReloadRecord: function() { return false; },
+  shouldBackgroundReloadAll: function() { return false; },
+
   // The fixture adapter does not support coalesceFindRequests
   coalesceFindRequests: false,
 
